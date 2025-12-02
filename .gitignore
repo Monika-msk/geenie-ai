@@ -1,0 +1,6 @@
+# Python venv
+.venv/
+kb_rag_agent/.venv/
+
+# Local vector DB
+kb_rag_agent/chroma_db/
