@@ -276,5 +276,4 @@ Remove-Item -Recurse -Force .\chroma_db
 - **More controls in UI**: Expose top-k, temperature, and max-tokens as configurable sliders.
 - **Additional file formats**: Extend to support DOCX, TXT, and HTML with appropriate readers.
 
-This project is intentionally designed to be **interview-ready and production-friendly**, while staying
-simple enough to run locally.
+
