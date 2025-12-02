@@ -15,14 +15,14 @@ from llama_index.llms.groq import Groq
 from llama_index.vector_stores.chroma import ChromaVectorStore
 from pypdf import PdfReader
 
-# ---------- Configuration ----------
+
 
 APP_TITLE = "⚡ Knowledge Base RAG Agent (LlamaIndex + Groq + BGE Embeddings)"
 CHROMA_PERSIST_DIR = "chroma_db"
 EMBED_MODEL_NAME = "BAAI/bge-small-en-v1.5"
 GROQ_MODEL_NAME = "llama-3.1-8b-instant"
 
-# System prompt ensures answers are grounded ONLY in retrieved context
+
 SYSTEM_PROMPT = (
     "You are a retrieval-augmented assistant over a private document collection. "
     "Use ONLY the provided context from the documents to answer. "
@@ -32,7 +32,7 @@ SYSTEM_PROMPT = (
 )
 
 
-# ---------- Utility Functions ----------
+
 
 def load_env() -> None:
     """Load environment variables from .env if present."""
@@ -221,7 +221,6 @@ def render_chat_history() -> None:
             st.write(msg["content"])
 
 
-# ---------- Main App ----------
 
 def main() -> None:
     load_env()
